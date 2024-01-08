@@ -34,6 +34,28 @@ function cambioDisplay(display){
     return biglietto.className = display
 }
 
+buttonSend.addEventListener("click",
+function(){
+    document.getElementById("cp").innerHTML = randomN(9000, 9100)
+    
+})
+
+function randomN(min, max){
+    return Math.floor(Math.random() * (max - min) + min)
+}
+
+
+buttonSend.addEventListener("click",
+function(){
+    document.getElementById("crz").innerHTML = randomN(1, 6)
+    
+})
+
+function randomN(min, max){
+    return Math.floor(Math.random() * (max - min) + min)
+}
+
+
 
 buttonDelete.addEventListener("click", 
 function(){
