@@ -1,0 +1,18 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    background-color:#b91450 ;
+}
+
+.text_purple{
+    color: #b91450;
+    font-weight: 500;
+}
+
+.border_purple{
+    border: #b91450 2px solid;
+}
