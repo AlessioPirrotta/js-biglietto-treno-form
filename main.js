@@ -1,7 +1,8 @@
 
 const euroKm = 0.21
 const buttonSend = document.getElementById("btn")
-
+const biglietto = document.getElementById("bgl")
+const buttonDelete = document.getElementById("btnd")
 buttonSend.addEventListener("click", 
 function(){
     let valueNome = document.getElementById("nomeCognome").value
@@ -21,8 +22,27 @@ if(valueEta < 18){
  console.log("prezzo biglietto", prezzoBiglietto)
 
  document.getElementById("spa").innerHTML = "€ "+ prezzoBiglietto.toFixed(2)
-
+ document.getElementById("nm").innerHTML = valueNome
 })
+
+buttonSend.addEventListener("click",
+function(){
+    cambioDisplay( "w-100 d-flex flex-column align-items-center d-block" )
+})
+
+function cambioDisplay(display){
+    return biglietto.className = display
+}
+
+
+buttonDelete.addEventListener("click", 
+function(){
+    document.location.reload()
+})
+
+
+
+
 
 
 

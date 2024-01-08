@@ -16,3 +16,11 @@ body{
 .border_purple{
     border: #b91450 2px solid;
 }
+
+.bg_grey{
+    background-color:#808080 ;
+}
+
+.border_grey{
+    border-block: 1px #808080 solid;
+}
